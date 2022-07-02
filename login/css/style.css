@@ -1,0 +1,101 @@
+.img-cont-expert {
+    margin: auto;
+    height: 90%;
+}
+
+.cont-expert {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.container-main {
+    margin: auto;
+    max-width: 70vw;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.panel-1 {
+    background: url('../img/expertos.jpg');
+}
+
+.panel-2 {
+    background: url('../img/diseños.png');
+}
+
+.panel-3 {
+    background: url('../img/estructuras.jpg');
+}
+
+.panel-4 {
+    background: url("../img/modelado.png");
+}
+
+.panel-5 {
+    background: url('../img/maquetado.jpg');
+}
+
+.panel-6 {
+    background: url('../img/img1.jpg');
+}
+
+.panel-7 {
+    background: url('../img/img2.jpg');
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600vh;
+    height: 55vh;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 5px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel-5 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600vh;
+    height: 55vh;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 5px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}

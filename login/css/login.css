@@ -1,0 +1,141 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+    background-color: #166cc2;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px #166cc2;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.inputcontainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #a4a8b1;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #a4a8b1;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submit {
+    display: block;
+    margin: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #166cc2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+}
+
+.submit:hover {
+    background-color: #f37e21;
+    transform: translateY(-2px);
+}
+
+.input:focus+.label {
+    top: -7px;
+    left: 4px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #166cc2;
+}
+
+.input:focus {
+    border: 2px solid #166cc2;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a {
+    padding: 145px;
+}
+
+p {
+    padding: 1px 106px;
+}
+
+img {
+    padding: 2px 40px;
+    position: relative;
+    top: 30px;
+}
+
+nav>ul>li:first-child>a {
+    background-image: url(../img/inicio.ico);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav>ul>li:first-child:hover>a {
+    background-image: url(../img/inicio.ico);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a {
+    position: relative;
+    right: 10px;
+}

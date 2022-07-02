@@ -1,0 +1,101 @@
+@font-face {
+    font-family: letramolona;
+    src: url(../Back\ to\ school.ttf);
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    font-family: letramolona;
+    position: relative;
+    top: 80px;
+}
+
+article {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 45px;
+}
+
+.carta-box {
+    margin: 100px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.carta-box:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+
+.cara {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 200px;
+    height: 250px;
+}
+
+.cara.detras {
+    transform: rotateY(180deg);
+    box-shadow: 0 10px 25px #166cc2;
+    width: 320px;
+    height: 250px;
+}
+
+.titulo1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: 60px;
+    font-family: letramolona;
+}
+
+.texto1 {
+    font-size: 14px;
+    position: relative;
+    margin-left: 6px;
+    top: 80px;
+}
+
+.imagene {
+    width: 320px;
+    height: 250px;
+    position: relative;
+    left: -40px;
+}

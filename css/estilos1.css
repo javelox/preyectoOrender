@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:ital,wght@0,200;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+
+/*Header superior*/
+
+.header__superior {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 300px;
+}
+
+
+/* Barra menu*/
+
+.container__menu {
+    width: 100%;
+    height: 70px;
+    background: #166cc2;
+    padding: 0px 100px;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+nav>ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav>ul>li:first-child>a {
+    background-image: url(../iconos/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav>ul>li:first-child:hover>a {
+    background-image: url(../iconos/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    /* El all/ease es el efecto que le da el cursor al pasar por encima de los cuadros azules junto con la sombrita que le hace*/
+}
+
+nav>ul>li>a:hover {
+    transform: scale(1.1);
+    background: #f37e21;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Submenú*/
+
+nav ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a {
+    display: block;
+    color: black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover {
+    background: #f37e21;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.content-all {
+    width: 210px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 340px;
+}
+
+.content-carrousel {
+    width: 50%;
+    position: absolute;
+    animation: rotar 29s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+    animation-play-state: paused;
+}
+
+.content-carrousel figure {
+    width: 166%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:hover {
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(10) {
+    transform: rotateY(360deg) translateZ(300px);
+}
+
+.content-carrousel img {
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/*Estilos de pie de página*/
+
+footer {
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    padding: 50px;
+    clear: both;
+    /*El clear both ayuda a poner un elemento debajo de otro elemento*/
+    background: white;
+}

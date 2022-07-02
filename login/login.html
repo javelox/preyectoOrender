@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagenes/user.png">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="../login/css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="imagen">
+        <img src="img/Orender.png">
+    </div>
+
+    <div class="login">
+        <form action="conexion.php" method="POST" class="form" class="form">
+            <h1 class="title">Iniciar Sesión</h1>
+            <div class="inputcontainer">
+                <input type="text" class="input" name="Email" placeholder="Correo Electronico">
+                <label for="" class="label">Correo Electronico</label>
+            </div>
+            <div class="inputcontainer">
+                <input type="password" class="input" name="contraseña" placeholder=" Contraseña ">
+                <label for=" " class="label ">Contraseña</label>
+            </div>
+            <p>¿Aún no estás registrado?</p>
+            <a href="../formulario/formulario.html">Registrate aquí</a>
+            <input type="submit" class="submit" name="IniciarSesion" class="cta" value="Ingresar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://localhost/Orender/Inicio.html"></a>
+                        <h4>Regresar</h4>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+</body>
+
+</html>
